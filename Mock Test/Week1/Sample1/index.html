@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selenium Practice Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .login-form { border: 1px solid #ccc; padding: 20px; margin-top: 20px; }
+        .product-list { margin-top: 20px; }
+        .product-item { border: 1px solid #ddd; padding: 10px; margin: 5px 0; }
+        .hidden-element { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Selenium Practice</h1>
+        
+        <!-- Login Form -->
+        <div class="login-form">
+            <h2>Login</h2>
+            <form id="loginForm" name="userLogin">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form-input"><br><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-input"><br><br>
+                
+                <button type="submit" id="submitBtn" class="btn">Login</button>
+                <a href="#" id="forgotLink" class="link">Forgot Password?</a>
+            </form>
+        </div>
+
+        <!-- Product List -->
+        <div class="product-list">
+            <h2>Products</h2>
+            <div class="product-item" data-product-id="p1">
+                <span class="product-name">Laptop</span>
+                <span class="price">$999</span>
+            </div>
+            <div class="product-item" data-product-id="p2">
+                <span class="product-name">Phone</span>
+                <span class="price">$499</span>
+            </div>
+            <div class="product-item hidden-element" data-product-id="p3">
+                <span class="product-name">Tablet</span>
+                <span class="price">$299</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p class="footer-text">© 2025 Selenium Practice</p>
+        </footer>
+    </div>
+</body>
+</html>
