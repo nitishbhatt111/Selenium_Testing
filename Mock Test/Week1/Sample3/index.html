@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup and Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 30px auto;
+        }
+        .form-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="form-box" id="signupForm">
+            <h2>Signup</h2>
+            <form>
+                <label for="signup-username">Username</label>
+                <input type="text" id="signup-username" name="signupUsername"><br><br>
+
+                <label>Email</label>
+                <input type="email" class="email-field" name="signupEmail"><br><br>
+
+                <label>Password</label>
+                <input type="password" id="signup-password" name="signupPassword"><br><br>
+
+                <label>Gender</label><br>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br><br>
+
+                <button type="submit" id="signupBtn">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-box" id="loginForm">
+            <h2>Login</h2>
+            <form>
+                <label for="login-user">Username</label>
+                <input type="text" name="loginUser" id="login-user"><br><br>
+
+                <label for="login-pass">Password</label>
+                <input type="password" name="loginPass" class="login-password"><br><br>
+
+                <input type="checkbox" id="rememberMe"> Remember me<br><br>
+
+                <button type="submit" name="loginButton">Login</button>
+            </form>
+            <p><a href="#" id="forgot-link">Forgot Password?</a></p>
+            <p><a href="#" class="signup-link">Don't have an account? Sign up here.</a></p>
+        </div>
+
+    </div>
+</body>
+</html>
